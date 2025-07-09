@@ -2,7 +2,7 @@
 
 An interactive quiz application built with React (Vite), Firebase, and Material-UI. Users can sign in, take quizzes fetched from Firestore, and see their scores on a leaderboard.
 
-<!-- Optional: replace with actual screenshot link -->
+![Screenshot](https://github.com/axhish04/QuizWebApp/blob/master/public/Screenshot%202025-07-09%20233311.png)
 
 🚀 Features
 
