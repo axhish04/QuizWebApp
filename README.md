@@ -1,12 +1,89 @@
-# React + Vite
+📚 Quiz Web App 🎯
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An interactive quiz application built with React (Vite), Firebase, and Material-UI. Users can sign in, take quizzes fetched from Firestore, and see their scores on a leaderboard.
 
-Currently, two official plugins are available:
+<!-- Optional: replace with actual screenshot link -->
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🚀 Features
 
-## Expanding the ESLint configuration
+✅ User Authentication
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Google Sign-In using Firebase Authentication
+
+✅ Dynamic Quizzes
+
+Quizzes and questions stored in Firestore Database
+
+Loaded dynamically in the app
+
+✅ Leaderboard
+
+Stores and displays top scores from all users
+
+✅ Responsive UI
+
+Mobile-friendly with Material-UI and Framer Motion animations
+
+✅ Real-time Firestore Integration
+
+Fetch quizzes and submit results seamlessly
+
+
+🖥️ Demo
+
+ [👉 Live Demo](https://quiz-app-b43fc.web.app/)
+
+📂 Folder Structure
+
+src/
+
+├── components/      
+├── pages/            
+├── firebase/         
+├── App.jsx          
+├── main.jsx          
+└── styles/       
+
+🛠 Setup Instructions
+
+1️⃣ Clone the repository
+
+git clone https://github.com/<your-username>/QuizWebApp.git
+cd QuizWebApp
+
+2️⃣ Install dependencies
+
+npm install
+
+3️⃣ Set up Firebase
+
+Go to Firebase Console
+
+Create a project and enable:
+
+Authentication (Google Sign-In)
+
+Cloud Firestore
+
+Replace Firebase config in src/firebase/firebaseConfig.js:
+
+const firebaseConfig = {
+
+  apiKey: "YOUR_API_KEY",
+  
+  authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
+  
+  projectId: "YOUR_PROJECT_ID",
+  
+  storageBucket: "YOUR_PROJECT_ID.appspot.com",
+  
+  messagingSenderId: "SENDER_ID",
+  
+  appId: "APP_ID"
+  
+};
+
+4️⃣ Run the app
+
+npm run dev
+Visit http://localhost:5173 in your browser 🚀
